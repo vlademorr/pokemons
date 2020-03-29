@@ -1,0 +1,127 @@
+.pokemon_container{
+    height: 240px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: darkgray;
+    transition: background-color linear 0.15s;
+}
+.pokemon_container:hover{
+    transition: background-color linear 0.15s;
+    background-color: #d7d7d7;
+}
+.pokemon_list_img{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin: 10px auto;
+}
+.pokemon_name{
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0;
+}
+
+.types{
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.type{
+    width: 40%;
+    margin: 0 3px;
+    height: 28px;
+    text-align: center;
+    border-radius: 3px;
+    border-style: solid;
+}
+
+.poison{
+    background: linear-gradient(0deg, #af81d9, #e6dbf0);
+    border-color: #af81d9;
+}
+
+.grass{
+    background: linear-gradient(0deg, #77cf7c, #def1df);
+    border-color: #77cf7c;
+}
+
+.bug{
+    background: linear-gradient(0deg, #85b08b, #e3f1e5);
+    border-color: #85b08b;
+}
+
+.dark{
+    background: linear-gradient(0deg, #8d8dbb, #c8c8e7);
+    border-color: #8d8dbb;
+}
+
+.dragon{
+    background: linear-gradient(0deg, #92d4dd, #c6e1e5);
+    border-color: #92d4dd;
+}
+
+.electric{
+    background: linear-gradient(0deg, #c6e1e5, #f9f9db);
+    border-color: #c6e1e5;
+}
+
+.fairy{
+    background: linear-gradient(0deg, #eed0dd, #f9f9db);
+    border-color: #eed0dd;
+}
+
+.fighting{
+    background: linear-gradient(0deg, #e8ac9c, #e9d1ca);
+    border-color: #e8ac9c;
+}
+
+.fire{
+    background: linear-gradient(0deg, #dd848a, #f1dcde);
+    border-color: #dd848a;
+}
+
+.flying{
+    background: linear-gradient(0deg, #9dc3df, #e5edf4);
+    border-color: #9dc3df;
+}
+
+.ghost{
+    background: linear-gradient(0deg, #d590db, #eedeef);
+    border-color: #d590db;
+}
+
+.ground{
+    background: linear-gradient(0deg, #dbb68d, #efe5db);
+    border-color: #dbb68d;
+}
+
+.ice{
+    background: linear-gradient(0deg, #a9dffa, #dbeff9);
+    border-color: #a9dffa;
+}
+
+.normal{
+    background: linear-gradient(0deg, #d194a8, #f0dde3);
+    border-color: #d194a8;
+}
+
+.psychic{
+    background: linear-gradient(0deg, #e595c4, #f0dee9);
+    border-color: #e595c4;
+}
+
+.rock{
+    background: linear-gradient(0deg, #d5a18e, #f3e9e6);
+    border-color: #d5a18e;
+}
+.steel{
+    background: linear-gradient(0deg, #81c9ac, #dbf0e8);
+    border-color: #81c9ac;
+}
+
+.water{
+    background: linear-gradient(0deg, #9cb7f9, #e6ecfa);
+    border-color: #9cb7f9;
+}

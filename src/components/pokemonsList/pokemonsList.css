@@ -1,0 +1,17 @@
+.pokemons_list{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    padding: 0;
+}
+li{
+    list-style: none;
+    margin: 15px 0;
+}
+
+.btn_load_more {
+    width: 100%;
+    margin-bottom: 20px;
+}

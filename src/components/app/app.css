@@ -1,0 +1,23 @@
+.container {
+    margin: 0 auto;
+    display: flex;
+}
+
+.left_side {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right_side {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.header h1 {
+    display: flex;
+    justify-content: center;
+}
