@@ -21,7 +21,7 @@ const PokemonDetails = ({pokemonDetails, loading}) => {
                 src={pokemonDetails.sprites.back_default}
                 alt={pokemonDetails.name}
             />
-            <h4 className="pokemon_details_name">{pokemonDetails.name} #{pokemonDetails.id}</h4>
+            <h5 className="pokemon_details_name">{pokemonDetails.name} #{pokemonDetails.id}</h5>
             <table className="table_pokemon_details">
                 <tbody>
                 <tr>
