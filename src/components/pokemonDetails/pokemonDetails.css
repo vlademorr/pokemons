@@ -11,7 +11,7 @@
     padding: 10px 10px;
 }
 
-@media (min-width: 375px)and (max-width: 576px){
+@media (min-width: 375px) and (max-width: 576px){
     .pokemon_details_container{
         width: 200px;
         top: 6%;
@@ -30,24 +30,8 @@
     display: flex;
     width: 150px;
     height: 150px;
-    margin: 15px auto;
+    margin: 0 auto;
 }
-.pokemon_back_details_img{
-    display: none;
-    width: 150px;
-    height: 150px;
-    margin: 15px auto;
-    transform: scale(-1, 1);
-}
-
-.pokemon_front_details_img:hover{
-    display: none;
-}
-
-.pokemon_front_details_img:hover + .pokemon_back_details_img{
-    display: flex;
-}
-
 
 .pokemon_details_name{
     font-weight: bold;

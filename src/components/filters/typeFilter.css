@@ -1,0 +1,22 @@
+.pokemon_types{
+    text-transform: capitalize;
+}
+
+.filter{
+    border: 0.08em solid darkgray;
+    border-radius: 5px;
+    padding: 0 12px;
+    font-weight: bold;
+    transition: background-color linear 0.15s;
+}
+
+.filter:hover{
+    transition: background-color linear 0.15s;
+    background-color: #cbcbcb;
+}
+
+.dropdown_menu ul{
+    height: 165px;
+    overflow-y: scroll;
+}
+

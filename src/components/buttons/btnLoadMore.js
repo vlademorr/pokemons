@@ -1,10 +1,9 @@
 import React from 'react';
 import {Button} from "react-bootstrap";
 import Spinner from "../spinner/spinner";
-import "./btnLoadMore.css";
 
-const BtnLoadMore = ({loadMore, loadingLoadMore, loadNewItems, loadingIndicatorLoadMore}) => {
-    if (loadingLoadMore) {
+const BtnLoadMore = ({loadMore, loadingBtnLoadMore, loadNewItems, loadingIndicatorLoadMore}) => {
+    if (loadingBtnLoadMore) {
         return (
             <Button
                 className="btn_load_more"

@@ -5,17 +5,17 @@ const PokemonListItem = ({pokemon, pokemonDetails}) => {
     return (
         <div
             className="pokemon_container"
-            onClick={() => pokemonDetails(pokemon.data)}
+            onClick={() => pokemonDetails(pokemon)}
         >
             <img
                 className="pokemon_list_img"
-                src={pokemon.data.sprites.front_default}
-                alt={pokemon.data.name}
+                src={pokemon.sprites.front_default}
+                alt={pokemon.name}
             />
-            <p className="pokemon_name">{pokemon.data.name}</p>
+            <p className="pokemon_name">{pokemon.name}</p>
             <div className="types">
                 {
-                    pokemon.data.types.map(({type}) => {
+                    pokemon.types.map(({type}) => {
                         return (
                             <div key={type.name} className={`${type.name} type`}>
                                 {type.name}

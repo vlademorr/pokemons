@@ -2,16 +2,17 @@ import React from "react";
 import {connect} from "react-redux";
 import PokemonDetails from "./pokemonDetails";
 
-const PokemonDetailsContainer = ({pokemonDetails, loading}) => {
+const PokemonDetailsContainer = ({pokemonDetails, loading, showContent}) => {
     return (
-        <PokemonDetails pokemonDetails={pokemonDetails} loading={loading}/>
+        <PokemonDetails pokemonDetails={pokemonDetails} loading={loading} showContent={showContent}/>
     );
 };
 
 const mapStateToProps = (state) => {
     return {
         pokemonDetails: state.pokemonDetails,
-        loading: state.loading
+        loading: state.loading,
+        showContent: state.showContent
     };
 };
 

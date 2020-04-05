@@ -1,14 +1,18 @@
 import React from "react";
+import {connect} from 'react-redux';
 import PokemonsList from "../pokemonsList/pokemonsListContainer";
 import PokemonDetails from "../pokemonDetails/pokemonDetailsContainer";
+import TypeFilter from "../filters/typeFilterContainer";
+import {clearFilterAction} from "../../actions/typeFilterActions";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./app.css";
 
-const App = () => {
+const App = ({clearFilterAction}) => {
     return (
         <>
             <div className="header">
-                <h1>Pokedex</h1>
+                <h1 className="title" onClick={clearFilterAction}>Pokedex</h1>
+                <TypeFilter />
             </div>
             <div className="container">
                 <div className="left_side">
@@ -22,4 +26,8 @@ const App = () => {
     );
 };
 
-export default App;
+const mapDispatchToProps = {
+    clearFilterAction
+};
+
+export default connect(null, mapDispatchToProps)(App);

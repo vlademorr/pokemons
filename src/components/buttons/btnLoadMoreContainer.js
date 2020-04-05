@@ -1,23 +1,30 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {loadMore, loadingIndicatorLoadMore} from "../../actions";
+import {loadMore, loadingIndicatorLoadMore} from "../../actions/loadMoreBtnActions";
 import BtnLoadMore from "./btnLoadMore";
 
-const BtnLoadMoreContainer = ({loadMore, loadingLoadMore, loadNewItems, loadingIndicatorLoadMore}) => {
-    return (
+const BtnLoadMoreContainer = ({
+    loadMore,
+    showLoadMoreBtn,
+    loadingBtnLoadMore,
+    loadNewItems,
+    loadingIndicatorLoadMore
+}) => {
+    return showLoadMoreBtn ? (
         <BtnLoadMore
             loadMore={loadMore}
-            loadingLoadMore={loadingLoadMore}
             loadNewItems={loadNewItems}
+            loadingBtnLoadMore={loadingBtnLoadMore}
             loadingIndicatorLoadMore={loadingIndicatorLoadMore}
         />
-    );
+    ) : null;
 };
 
 const mapStateToProps = (state) => {
     return {
         loadNewItems: state.loadNewItems,
-        loadingLoadMore: state.loadingLoadMore
+        loadingBtnLoadMore: state.loadingBtnLoadMore,
+        showLoadMoreBtn: state.showLoadMoreBtn
     };
 };
 

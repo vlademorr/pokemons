@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import {pokemonDetails} from "../../actions";
+import {pokemonDetails} from "../../actions/pokemonsActions";
 import PokemonListItem from "./pokemonListItem";
 
 const PokemonListItemContainer = ({pokemon, pokemonDetails}) => {
